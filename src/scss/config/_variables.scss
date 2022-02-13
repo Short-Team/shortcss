@@ -1,2 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
 $font: 'Mulish', sans-serif;
+
+
+
+
+
+
+// * System Grid
+$numberCols :					12;
+$gutter: 						1rem;
+$grid-gutter-width:           	30px !default;
+
+
+// * Breakpoints
+$breakpoints: (
+	'xs': 0,
+	'sm': 576px,
+	'md': 768px,
+	'lg': 992px,
+	'xl': 1200px,
+	'xxl': 1440px,
+);
+
+
+
+
+// * Acncho de modales
+$modal-xl:                          1140px !default;
+$modal-lg:                          800px !default;
+$modal-md:                          500px !default;
+$modal-sm:                          300px !default;
