@@ -2,15 +2,11 @@
 $font: 'Mulish', sans-serif;
 
 
-
-
-
-
 // * System Grid
 $numberCols :					12;
 $gutter: 						1rem;
 $grid-gutter-width:           	30px !default;
-
+$enable-grid-classes:           true !default;
 
 // * Breakpoints
 $breakpoints: (
@@ -20,7 +16,18 @@ $breakpoints: (
 	'lg': 992px,
 	'xl': 1200px,
 	'xxl': 1440px,
-);
+) !default;
+
+
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1440px,
+  xxxl: 1600px
+) !default;
 
 
 

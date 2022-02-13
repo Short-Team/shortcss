@@ -9,6 +9,8 @@
 }
 
 
+
+
 @mixin colsGenerator($breakpoint, $cols, $prefix){
 	@each $name, $bks in $breakpoint {
 		@media(min-width: $bks){

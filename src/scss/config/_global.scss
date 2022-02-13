@@ -136,6 +136,9 @@ body{
 	text-align: center;
 	font-size:18px;
 	font-weight: bold;
+	@include respond-down("md"){
+		background: #000;
+	}
 }
 
 
