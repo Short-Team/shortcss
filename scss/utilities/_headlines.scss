@@ -1,0 +1,12 @@
+@each $name, $size, $fw, $fzm in $headlines {
+	.headline-#{$name}{
+		font-family: $font;
+		font-size: $size;
+		font-weight: $fw;
+		line-height: $size;
+		@include respond-down("sm"){
+			font-size: $fzm;
+			line-height: $fzm;
+		}
+	}
+}

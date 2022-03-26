@@ -1,0 +1,3 @@
+@each $value in $font-styles {
+	.font-#{$value}{font-style: $value !important;}
+}

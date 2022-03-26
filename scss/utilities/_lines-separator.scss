@@ -1,0 +1,18 @@
+@each $name, $w, $h in $lines {
+	.line-#{$name}{
+		width: $w;
+		height: $h;
+		border: 0;
+		
+		&.left{
+			margin: auto auto auto 0;
+		}
+		&.center{
+			margin: 0 auto;
+		}
+		&.right{
+			margin: auto 0 auto auto;
+		}
+	}
+}
+

@@ -1,0 +1,3 @@
+@each $value in $text-transform {
+	.text-#{$value}{text-transform: $value !important;}
+}

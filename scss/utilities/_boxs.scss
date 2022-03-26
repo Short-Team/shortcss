@@ -1,0 +1,26 @@
+// .box{
+//     height: 200px;
+// 	@include respond-down("md"){
+// 		height: 300px;
+// 	}
+
+// 	@include respond-down("sm"){
+// 		height: 250px;
+// 	}
+// }
+
+@each $name, $height, $height-r  in $boxs{
+	.box {
+		height: $height;
+		@include respond-down($name){
+			height: $height-r;
+		}
+
+	}
+}
+
+@each $name, $value in $box-heigth {
+	.box-#{$name}{
+		height: $value !important;
+	}
+}

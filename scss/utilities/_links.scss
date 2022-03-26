@@ -1,0 +1,31 @@
+@each $name, $color in $link-colors {
+	.link-#{$name}{
+		font: {
+			family: $font;
+			size: 16px;
+		}
+		text-decoration: none;
+		color: $color ;
+		transition: $trans-lg;
+		i{
+			font-size: 12px !important;
+			color: $color;
+			transition: $trans-lg;
+		}
+		.md{font-size: 20px !important;}
+		&:hover{
+			color: $secondary !important;
+			transition: $trans-lg;
+			i{
+				color: $secondary !important;
+				margin-left: 4px;
+			}
+		}
+		&:focus{
+			color: $secondary !important;
+		}
+		&:active{
+			color: $secondary !important;
+		}
+	}
+}

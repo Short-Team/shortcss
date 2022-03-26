@@ -1,0 +1,12 @@
+@mixin responsive() {
+	// * 1: establecer un máximo en relación con el padre
+	max-width: 100%;
+	// * 2: anula la altura a automática, de lo contrario, las imágenes se estirarán
+	// * al establecer un atributo de ancho y alto en el elemento img.
+	height: auto;
+}
+
+.responsive {
+	@include responsive();
+}
+

@@ -1,0 +1,14 @@
+@each $name, $deg, $color1, $porg1, $color2, $porg2, $color3, $porg3 in $linearGradient {
+	.gradient-#{$name}{
+		background: linear-gradient($deg, rgba($color1,1) $porg1, rgba($color2,1) $porg2, rgba($color3,1) $porg3);
+		@include respond-down("md"){
+			background: linear-gradient(0deg, rgba($color1,1) $porg1, rgba($color1,1) $porg2, rgba($color1,1) $porg3) !important;
+		}
+	}
+}
+
+@each $name, $deg, $color, $color2  in $gradient-bicolor{
+	.g-#{$name}{
+		background: linear-gradient($deg, $color 0%, $color2 100%);
+	}
+}

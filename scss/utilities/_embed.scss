@@ -1,0 +1,85 @@
+// Credit: Nicolas Gallagher and SUIT CSS.
+
+.embed-responsive {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0;
+	overflow: hidden;
+
+	&::before {
+	  display: block;
+	  content: "";
+	}
+
+	.embed-responsive-item,
+	iframe,
+	embed,
+	object,
+	video {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  border: 0;
+	}
+  }
+
+.embed{
+	display: flex;
+
+	@include respond-down("sm"){
+		flex-direction: column;
+	}
+	&-video{
+		width: 50%;
+		padding: 0;
+		iframe{
+			border-radius: $rounded 0  0 $rounded;
+			@include respond-down("sm"){
+				border-radius: $rounded $rounded 0  0;
+			}
+		}
+		@include respond-down("sm"){
+			width: 100%;
+		}
+	}
+	&-caption{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50%;
+		padding: 10px 30px;
+		background-color: $gray-light;
+		border-radius: 0 $rounded $rounded 0;
+		@include respond-down("sm"){
+			width: 100%;
+			border-radius: 0 0 $rounded $rounded;
+			height: 200px;
+		}
+		.caption-title{
+			color: $primary;
+			font-weight: 500;
+			font-size: 22px;
+			margin: 5px 0;
+		}
+		.caption-text{
+			color: $gray-dark;
+			font-weight: 500;
+			font-size: 16px;
+		}
+	}
+}
+
+//   @each $embed-responsive-aspect-ratio in $embed-responsive-aspect-ratios {
+// 	$embed-responsive-aspect-ratio-x: nth($embed-responsive-aspect-ratio, 1);
+// 	$embed-responsive-aspect-ratio-y: nth($embed-responsive-aspect-ratio, 2);
+
+// 	.embed-responsive-#{$embed-responsive-aspect-ratio-x}by#{$embed-responsive-aspect-ratio-y} {
+// 	  &::before {
+// 		padding-top: percentage(divide($embed-responsive-aspect-ratio-y, $embed-responsive-aspect-ratio-x));
+// 	  }
+// 	}
+//   }

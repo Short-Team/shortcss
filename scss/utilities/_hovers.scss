@@ -1,0 +1,8 @@
+@each $name, $value in $hover-colors {
+	.hover-#{$name}{
+		&:hover{
+			background: $value;
+			transition: $trans-lg;
+		}
+	}
+}
