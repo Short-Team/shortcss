@@ -19,7 +19,7 @@ METODOLOGÍA CSS en 2022 [**`Saber mas`**](https://www.youtube.com/watch?v=f0LpZ
 
 
 
-<p align="left">
+<p align="center">
   <img src="https://res.cloudinary.com/yormian/image/upload/v1648313845/shorcss/iso-logo-yellow.png" width="100" title="hover text">
 </p>
 
