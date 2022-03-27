@@ -1,0 +1,182 @@
+@import 'colors';
+@import 'fonts';
+
+// * Text
+
+$font: 				'Montserrat', sans-serif;
+// $font: 				'Roboto', sans-serif;
+$headlines: 		"1" 3.052rem 700 2rem, "2" 2.441rem 700 1.8rem, "3" 1.953rem 600 1.7rem, "4" 1.563rem 600 1.6rem, "5" 1.25rem 600 1.5rem, "6" 1rem 600 1.4rem;
+$sub-titles: 		"1" 2.125rem 500 , "2" 1.5rem 500, "3" 1.25rem 500, "4" 1rem 400;
+$texts: 			"text-1" 1.125rem 400, "text-2" 1rem 400, "caption" 0.875rem 400, "overline" 0.75rem 400;
+$text-align: 		left, right,  justify, center;
+$font-styles: 		normal,italic, oblique;
+$text-transform: 	capitalize,uppercase, lowercase;
+$font-weights: (
+	'thin': 100,
+	'extra-light': 200,
+	'light': 300,
+	'regular': 400,
+	'medium': 500,
+	'semibold': 600,
+	'bold': 700,
+	'black': 800,
+);
+
+// * Sizes Text
+$size-texts: (
+	"14": 14px,
+	"16": 16px,
+	"18": 18px,
+	"20": 20px,
+	"22": 22px,
+	"24": 24px
+);
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+$line-height-base:            1.5 !default;
+$line-height-lg:              1.5 !default;
+$line-height-sm:              1.5 !default;
+
+
+// * Bordes
+$border-width:                2px !default;
+$border-color:                $gray !default;
+$border-radius:               .25rem !default;
+$border-radius-lg:            .3rem !default;
+$border-radius-sm:            .2rem !default;
+$enable-rounded:              true !default;
+$rounded-pill:                50rem !default;
+
+
+// * Confing Inputs y buttons
+$component-active-bg:         $secondary !default;
+$input-btn-padding-y:         .375rem !default;
+$input-btn-padding-x:         .75rem !default;
+$input-btn-font-family:       $font !default;
+$input-btn-font-size:         $font-size-base !default;
+$input-btn-line-height:       $line-height-base !default;
+$input-btn-padding-y-lg:      .5rem !default;
+$input-btn-padding-x-lg:      1rem !default;
+$input-btn-padding-y-sm:      .25rem !default;
+$input-btn-padding-x-sm:      .5rem !default;
+$input-btn-font-size-sm:      $font-size-sm !default;
+$input-btn-line-height-sm:    $line-height-sm !default;
+$input-btn-padding-y-lg:      .5rem !default;
+$input-btn-padding-x-lg:      1rem !default;
+$input-btn-font-size-lg:      $font-size-lg !default;
+$input-btn-line-height-lg:    $line-height-lg !default;
+$input-btn-focus-width:       .2rem !default;
+$input-btn-focus-color:       rgba($component-active-bg, .25) !default;
+$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+
+// * buttons
+$btn-padding-y:               $input-btn-padding-y !default;
+$btn-padding-x:               $input-btn-padding-x !default;
+$btn-font-family:             $input-btn-font-family !default;
+$btn-font-size:               $input-btn-font-size !default;
+$btn-line-height:             $input-btn-line-height !default;
+$btn-white-space:             null !default; // Set to `nowrap` to prevent text wrapping
+$btn-border-radius:           $border-radius !default;
+$btn-border-radius-lg:        $border-radius-lg !default;
+$btn-border-radius-sm:        $border-radius-sm !default;
+$btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
+$btn-padding-y-sm:            $input-btn-padding-y-sm !default;
+$btn-padding-x-sm:            $input-btn-padding-x-sm !default;
+$btn-font-size-sm:            $input-btn-font-size-sm !default;
+$btn-line-height-sm:          $input-btn-line-height-sm !default;
+$btn-padding-y-lg:            $input-btn-padding-y-lg !default;
+$btn-padding-x-lg:            $input-btn-padding-x-lg !default;
+$btn-font-size-lg:            $input-btn-font-size-lg !default;
+$btn-line-height-lg:          $input-btn-line-height-lg !default;
+
+
+// * Box Shadow
+$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+
+
+// Limit
+$limit: 5;
+$unit: 1rem;
+$font-size: 16;
+
+// * Colors - Background
+$theme-colors: (
+	'primary': $primary,
+  	'secondary':$secondary,
+  	'danger': $danger,
+  	'warning':$warning,
+  	'success': $success,
+  	'info': $info,
+  	'white': $white,
+  	'dark': $dark,
+  	'muted': $gray
+);
+
+
+$floats:        left, right, none;
+$displays:      none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
+$overflows:     auto, hidden !default;
+$positions:     static, relative, absolute, fixed, sticky !default;
+
+
+// * System Grid
+$numberCols :					12;
+$gutter: 						  1rem;
+$grid-gutter-width:   30px !default;
+$enable-grid-classes: true !default;
+
+// * Breakpoints
+$breakpoints: (
+	'xs': 0,
+	'sm': 576px,
+	'md': 768px,
+	'lg': 992px,
+	'xl': 1200px,
+	'xxl': 1440px,
+) !default;
+
+
+// * Sizing
+//* Esta variable afecta `.h-*` y `.w-*` clases.
+$sizes: () !default;
+$sizes: map-merge(
+  	(
+		"xxs": 250px,
+		"xs": 350px,
+		"sm": 400px,
+		"md": 500px,
+		"lg": 600px,
+		"xl": 800px,
+		"xxl": 1024px,
+		25: 25%,
+		50: 50%,
+		75: 75%,
+		100: 100%,
+		auto: auto
+  	),
+  $sizes
+);
+
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1440px,
+  xxxl: 1600px
+) !default;
+
+
+// * Acncho de modales
+$modal-xl:                          1140px !default;
+$modal-lg:                          800px !default;
+$modal-md:                          500px !default;
+$modal-sm:                          300px !default;
+
+
+

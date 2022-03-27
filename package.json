@@ -1,0 +1,26 @@
+{
+  "name": "shortcss",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <img src=\"https://res.cloudinary.com/yormian/image/upload/v1648313909/shorcss/Logo-ShortCSS-yellow.png\" width=\"300\" title=\"hover text\"> </p>",
+  "main": "index.js",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Short-Team/shortcss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Short-Team/shortcss/issues"
+  },
+  "homepage": "https://github.com/Short-Team/shortcss#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.0",
+    "parcel": "^2.4.0"
+  }
+}

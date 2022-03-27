@@ -1,0 +1,109 @@
+$px: "px";
+@each  $breakpoint in map-keys($breakpoints)  {
+
+	@include respond-up($breakpoint){
+		$infix: breakpoint-infix($breakpoint, $breakpoints);
+
+        /* Margin Top - Bottom - Left- Rigth */
+        @for $i from 0 through $limit {
+            .m-#{$i}#{$infix}{
+                margin:  $i * $unit !important; 
+            }
+        }
+
+        /* Margin Top */
+        @for $i from 1 through $limit{
+            .mt-#{$i}#{$infix}{
+                margin-top:  $i * $unit !important;
+            }
+        }
+
+        /* Margin Top - Bottom */
+        @for $i from 1 through $limit{
+            .my-#{$i}#{$infix}{
+                margin-top:  $i * $unit !important;
+                margin-bottom:  $i * $unit !important;
+            }
+        }
+
+        /* Margin Left - Rigth */
+        @for $i from 1 through $limit{
+            .mx-#{$i}#{$infix}{
+                margin-right:  $i * $unit !important;
+                margin-left:  $i * $unit !important;
+            }
+        }
+
+        /* Margin Left - Rigth */
+        @for $i from 1 through $limit{
+            .mr-#{$i}#{$infix}{
+                margin-right:  $i * $unit !important;
+            }
+        }
+
+        /* Margin Bottom */
+        @for $i from 1 through $limit{
+            .mb-#{$i}#{$infix}{
+                margin-bottom:  $i * $unit !important;
+            }
+        }
+
+        /* Margin Left */
+        @for $i from 1 through $limit{
+            .ml-#{$i}#{$infix}{
+                margin-left:  $i * $unit !important;
+            }
+        }
+
+        /* Padding Top - Bottom - Left- Rigth */
+        @for $i from 0 through $limit{
+            .p-#{$i}#{$infix}{
+                padding:  $i * $unit !important; 
+            }
+        }
+
+        /* Padding Top */
+        @for $i from 1 through $limit {
+            .pt-#{$i}#{$infix}{
+                padding-top:  $i * $unit !important;
+            }
+        }
+
+        /* Padding Top - Bottom */
+        @for $i from 1 through $limit{
+            .py-#{$i}#{$infix}{
+                padding-top:  $i * $unit !important;
+                padding-bottom:  $i * $unit !important;
+            }
+        }
+
+        /* Padding Left - Rigth */
+        @for $i from 1 through $limit{
+            .px-#{$i}#{$infix}{
+                padding-right:  $i * $unit !important;
+                padding-left:  $i * $unit !important;
+            }
+        }
+
+        /* Padding Left - Rigth */
+        @for $i from 1 through $limit{
+            .pr-#{$i}#{$infix}{
+                padding-right:  $i * $unit !important;
+            }
+        }
+
+        /* Padding Bottom */
+        @for $i from 1 through $limit{
+            .pb-#{$i}#{$infix}{
+                padding-bottom:  $i * $unit !important;
+            }
+        }
+
+        /* Padding Left */
+        @for $i from 1 through $limit{
+            .pl-#{$i}#{$infix}{
+                padding-left:  $i * $unit !important;
+            }
+        }
+	}
+}

@@ -10,7 +10,7 @@
 
 //* Gutter / No Gutter
 [class*=col]{
-	padding: ($gutter / 2);
+	padding: calc(($gutter / 2));
 	// Si prefieres algo mas especifico que pueda funcionar en una sola columna (esta clase se aplicaría directamente a la columna y no a la fila)
 	&.no-gutter{
 		padding: 0;

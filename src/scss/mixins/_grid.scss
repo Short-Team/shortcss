@@ -12,13 +12,13 @@
 			/* OFFSET COLUMNS */
 			@for $i from 1 to $cols + 1 {
 				.#{$prefix}-#{$name}-#{$i}{
-					width: (($i * 100) / $cols) * 1%;
+					width: calc(($i * 100) / $cols) * 1%;
 				}
 			}
 			/* OFFSET COLUMNS */
 			@for $i from 1 to $cols + 1 {
 				.offset-#{$name}-#{$i}{
-					margin-left: ((100% * $i) / $cols);
+					margin-left: calc((100% * $i) / $cols);
 				}
 			}
 		}
