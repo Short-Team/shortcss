@@ -1,5 +1,5 @@
-@each $name, $size, $fw, $lh in $sub-titles {
-	.sub-title-#{$name}{
+@each $name, $size, $fw, $lh in $subtitles {
+	.subtitle-#{$name}{
 		font-family: $font;
 		font-size: $size;
 		font-weight: $fw;
